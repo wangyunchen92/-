@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D521BB1A20CE4ADC0041370A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D521BB1920CE4ADC0041370A /* AppDelegate.m */; };
+		D521BB1D20CE4ADC0041370A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D521BB1C20CE4ADC0041370A /* ViewController.m */; };
+		D521BB2020CE4ADC0041370A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D521BB1E20CE4ADC0041370A /* Main.storyboard */; };
+		D521BB2220CE4ADE0041370A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D521BB2120CE4ADE0041370A /* Assets.xcassets */; };
+		D521BB2520CE4ADE0041370A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D521BB2320CE4ADE0041370A /* LaunchScreen.storyboard */; };
+		D521BB2820CE4ADE0041370A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D521BB2720CE4ADE0041370A /* main.m */; };
+		D521BB3220CE4ADE0041370A /* ____demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D521BB3120CE4ADE0041370A /* ____demoTests.m */; };
+		D521BB3D20CE4ADF0041370A /* ____demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D521BB3C20CE4ADF0041370A /* ____demoUITests.m */; };
+		D521BB4D20CE4B230041370A /* boardView.m in Sources */ = {isa = PBXBuildFile; fileRef = D521BB4C20CE4B230041370A /* boardView.m */; };
+		D521BB4F20CE4B340041370A /* boardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D521BB4E20CE4B340041370A /* boardView.xib */; };
+		D521BB5320CE55580041370A /* Piece.m in Sources */ = {isa = PBXBuildFile; fileRef = D521BB5220CE55580041370A /* Piece.m */; };
+		D521BB6120CE6F9B0041370A /* 14.png in Resources */ = {isa = PBXBuildFile; fileRef = D521BB5520CE6F9B0041370A /* 14.png */; };
+		D521BB6220CE6F9B0041370A /* 15.png in Resources */ = {isa = PBXBuildFile; fileRef = D521BB5620CE6F9B0041370A /* 15.png */; };
+		D521BB6320CE6F9B0041370A /* 16.png in Resources */ = {isa = PBXBuildFile; fileRef = D521BB5720CE6F9B0041370A /* 16.png */; };
+		D521BB6420CE6F9B0041370A /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = D521BB5820CE6F9B0041370A /* 12.png */; };
+		D521BB6520CE6F9B0041370A /* 13.png in Resources */ = {isa = PBXBuildFile; fileRef = D521BB5920CE6F9B0041370A /* 13.png */; };
+		D521BB6620CE6F9B0041370A /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = D521BB5A20CE6F9B0041370A /* 11.png */; };
+		D521BB6720CE6F9B0041370A /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = D521BB5B20CE6F9B0041370A /* 4.png */; };
+		D521BB6820CE6F9B0041370A /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = D521BB5C20CE6F9B0041370A /* 5.png */; };
+		D521BB6920CE6F9B0041370A /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = D521BB5D20CE6F9B0041370A /* 6.png */; };
+		D521BB6A20CE6F9B0041370A /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D521BB5E20CE6F9B0041370A /* 2.png */; };
+		D521BB6B20CE6F9B0041370A /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D521BB5F20CE6F9B0041370A /* 3.png */; };
+		D521BB6C20CE6F9B0041370A /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D521BB6020CE6F9B0041370A /* 1.png */; };
+		D563911F20CF99310033DA58 /* Ppiece.m in Sources */ = {isa = PBXBuildFile; fileRef = D563911E20CF99310033DA58 /* Ppiece.m */; };
+		D563912220CF99420033DA58 /* Rpiece.m in Sources */ = {isa = PBXBuildFile; fileRef = D563912120CF99420033DA58 /* Rpiece.m */; };
+		D563912520CF994D0033DA58 /* Npiece.m in Sources */ = {isa = PBXBuildFile; fileRef = D563912420CF994D0033DA58 /* Npiece.m */; };
+		D563912820CF99580033DA58 /* Bpiece.m in Sources */ = {isa = PBXBuildFile; fileRef = D563912720CF99580033DA58 /* Bpiece.m */; };
+		D563912B20CF99640033DA58 /* Qpiece.m in Sources */ = {isa = PBXBuildFile; fileRef = D563912A20CF99640033DA58 /* Qpiece.m */; };
+		D563912E20CF996C0033DA58 /* Kpiece.m in Sources */ = {isa = PBXBuildFile; fileRef = D563912D20CF996C0033DA58 /* Kpiece.m */; };
+		D563913120CFC4B90033DA58 /* placeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D563913020CFC4B90033DA58 /* placeModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D521BB2E20CE4ADE0041370A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D521BB0D20CE4ADC0041370A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D521BB1420CE4ADC0041370A;
+			remoteInfo = "国际象棋demo";
+		};
+		D521BB3920CE4ADF0041370A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D521BB0D20CE4ADC0041370A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D521BB1420CE4ADC0041370A;
+			remoteInfo = "国际象棋demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D521BB1520CE4ADC0041370A /* 国际象棋demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "国际象棋demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D521BB1820CE4ADC0041370A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D521BB1920CE4ADC0041370A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D521BB1B20CE4ADC0041370A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D521BB1C20CE4ADC0041370A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D521BB1F20CE4ADC0041370A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D521BB2120CE4ADE0041370A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D521BB2420CE4ADE0041370A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D521BB2620CE4ADE0041370A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D521BB2720CE4ADE0041370A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D521BB2D20CE4ADE0041370A /* 国际象棋demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "国际象棋demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D521BB3120CE4ADE0041370A /* ____demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____demoTests.m"; sourceTree = "<group>"; };
+		D521BB3320CE4ADF0041370A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D521BB3820CE4ADF0041370A /* 国际象棋demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "国际象棋demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D521BB3C20CE4ADF0041370A /* ____demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____demoUITests.m"; sourceTree = "<group>"; };
+		D521BB3E20CE4ADF0041370A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D521BB4B20CE4B230041370A /* boardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = boardView.h; sourceTree = "<group>"; };
+		D521BB4C20CE4B230041370A /* boardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = boardView.m; sourceTree = "<group>"; };
+		D521BB4E20CE4B340041370A /* boardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = boardView.xib; sourceTree = "<group>"; };
+		D521BB5120CE55580041370A /* Piece.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Piece.h; sourceTree = "<group>"; };
+		D521BB5220CE55580041370A /* Piece.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Piece.m; sourceTree = "<group>"; };
+		D521BB5520CE6F9B0041370A /* 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14.png; sourceTree = "<group>"; };
+		D521BB5620CE6F9B0041370A /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
+		D521BB5720CE6F9B0041370A /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
+		D521BB5820CE6F9B0041370A /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.png; sourceTree = "<group>"; };
+		D521BB5920CE6F9B0041370A /* 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13.png; sourceTree = "<group>"; };
+		D521BB5A20CE6F9B0041370A /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		D521BB5B20CE6F9B0041370A /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		D521BB5C20CE6F9B0041370A /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		D521BB5D20CE6F9B0041370A /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		D521BB5E20CE6F9B0041370A /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		D521BB5F20CE6F9B0041370A /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		D521BB6020CE6F9B0041370A /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		D563911D20CF99310033DA58 /* Ppiece.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ppiece.h; sourceTree = "<group>"; };
+		D563911E20CF99310033DA58 /* Ppiece.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ppiece.m; sourceTree = "<group>"; };
+		D563912020CF99420033DA58 /* Rpiece.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rpiece.h; sourceTree = "<group>"; };
+		D563912120CF99420033DA58 /* Rpiece.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rpiece.m; sourceTree = "<group>"; };
+		D563912320CF994D0033DA58 /* Npiece.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Npiece.h; sourceTree = "<group>"; };
+		D563912420CF994D0033DA58 /* Npiece.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Npiece.m; sourceTree = "<group>"; };
+		D563912620CF99580033DA58 /* Bpiece.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bpiece.h; sourceTree = "<group>"; };
+		D563912720CF99580033DA58 /* Bpiece.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bpiece.m; sourceTree = "<group>"; };
+		D563912920CF99640033DA58 /* Qpiece.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Qpiece.h; sourceTree = "<group>"; };
+		D563912A20CF99640033DA58 /* Qpiece.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Qpiece.m; sourceTree = "<group>"; };
+		D563912C20CF996C0033DA58 /* Kpiece.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kpiece.h; sourceTree = "<group>"; };
+		D563912D20CF996C0033DA58 /* Kpiece.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kpiece.m; sourceTree = "<group>"; };
+		D563912F20CFC4B90033DA58 /* placeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = placeModel.h; sourceTree = "<group>"; };
+		D563913020CFC4B90033DA58 /* placeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = placeModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D521BB1220CE4ADC0041370A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D521BB2A20CE4ADE0041370A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D521BB3520CE4ADF0041370A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D521BB0C20CE4ADC0041370A = {
+			isa = PBXGroup;
+			children = (
+				D521BB1720CE4ADC0041370A /* 国际象棋demo */,
+				D521BB3020CE4ADE0041370A /* 国际象棋demoTests */,
+				D521BB3B20CE4ADF0041370A /* 国际象棋demoUITests */,
+				D521BB1620CE4ADC0041370A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D521BB1620CE4ADC0041370A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D521BB1520CE4ADC0041370A /* 国际象棋demo.app */,
+				D521BB2D20CE4ADE0041370A /* 国际象棋demoTests.xctest */,
+				D521BB3820CE4ADF0041370A /* 国际象棋demoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D521BB1720CE4ADC0041370A /* 国际象棋demo */ = {
+			isa = PBXGroup;
+			children = (
+				D521BB5420CE6F9B0041370A /* 素材 */,
+				D521BB5020CE55370041370A /* Piece */,
+				D521BB4A20CE4B120041370A /* boardView */,
+				D521BB1820CE4ADC0041370A /* AppDelegate.h */,
+				D521BB1920CE4ADC0041370A /* AppDelegate.m */,
+				D521BB1B20CE4ADC0041370A /* ViewController.h */,
+				D521BB1C20CE4ADC0041370A /* ViewController.m */,
+				D521BB1E20CE4ADC0041370A /* Main.storyboard */,
+				D521BB2120CE4ADE0041370A /* Assets.xcassets */,
+				D521BB2320CE4ADE0041370A /* LaunchScreen.storyboard */,
+				D521BB2620CE4ADE0041370A /* Info.plist */,
+				D521BB2720CE4ADE0041370A /* main.m */,
+			);
+			path = "国际象棋demo";
+			sourceTree = "<group>";
+		};
+		D521BB3020CE4ADE0041370A /* 国际象棋demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D521BB3120CE4ADE0041370A /* ____demoTests.m */,
+				D521BB3320CE4ADF0041370A /* Info.plist */,
+			);
+			path = "国际象棋demoTests";
+			sourceTree = "<group>";
+		};
+		D521BB3B20CE4ADF0041370A /* 国际象棋demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D521BB3C20CE4ADF0041370A /* ____demoUITests.m */,
+				D521BB3E20CE4ADF0041370A /* Info.plist */,
+			);
+			path = "国际象棋demoUITests";
+			sourceTree = "<group>";
+		};
+		D521BB4A20CE4B120041370A /* boardView */ = {
+			isa = PBXGroup;
+			children = (
+				D521BB4B20CE4B230041370A /* boardView.h */,
+				D521BB4C20CE4B230041370A /* boardView.m */,
+				D521BB4E20CE4B340041370A /* boardView.xib */,
+				D563912F20CFC4B90033DA58 /* placeModel.h */,
+				D563913020CFC4B90033DA58 /* placeModel.m */,
+			);
+			path = boardView;
+			sourceTree = "<group>";
+		};
+		D521BB5020CE55370041370A /* Piece */ = {
+			isa = PBXGroup;
+			children = (
+				D521BB5120CE55580041370A /* Piece.h */,
+				D521BB5220CE55580041370A /* Piece.m */,
+				D563911D20CF99310033DA58 /* Ppiece.h */,
+				D563911E20CF99310033DA58 /* Ppiece.m */,
+				D563912020CF99420033DA58 /* Rpiece.h */,
+				D563912120CF99420033DA58 /* Rpiece.m */,
+				D563912320CF994D0033DA58 /* Npiece.h */,
+				D563912420CF994D0033DA58 /* Npiece.m */,
+				D563912620CF99580033DA58 /* Bpiece.h */,
+				D563912720CF99580033DA58 /* Bpiece.m */,
+				D563912920CF99640033DA58 /* Qpiece.h */,
+				D563912A20CF99640033DA58 /* Qpiece.m */,
+				D563912C20CF996C0033DA58 /* Kpiece.h */,
+				D563912D20CF996C0033DA58 /* Kpiece.m */,
+			);
+			path = Piece;
+			sourceTree = "<group>";
+		};
+		D521BB5420CE6F9B0041370A /* 素材 */ = {
+			isa = PBXGroup;
+			children = (
+				D521BB5520CE6F9B0041370A /* 14.png */,
+				D521BB5620CE6F9B0041370A /* 15.png */,
+				D521BB5720CE6F9B0041370A /* 16.png */,
+				D521BB5820CE6F9B0041370A /* 12.png */,
+				D521BB5920CE6F9B0041370A /* 13.png */,
+				D521BB5A20CE6F9B0041370A /* 11.png */,
+				D521BB5B20CE6F9B0041370A /* 4.png */,
+				D521BB5C20CE6F9B0041370A /* 5.png */,
+				D521BB5D20CE6F9B0041370A /* 6.png */,
+				D521BB5E20CE6F9B0041370A /* 2.png */,
+				D521BB5F20CE6F9B0041370A /* 3.png */,
+				D521BB6020CE6F9B0041370A /* 1.png */,
+			);
+			path = "素材";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D521BB1420CE4ADC0041370A /* 国际象棋demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D521BB4120CE4ADF0041370A /* Build configuration list for PBXNativeTarget "国际象棋demo" */;
+			buildPhases = (
+				D521BB1120CE4ADC0041370A /* Sources */,
+				D521BB1220CE4ADC0041370A /* Frameworks */,
+				D521BB1320CE4ADC0041370A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "国际象棋demo";
+			productName = "国际象棋demo";
+			productReference = D521BB1520CE4ADC0041370A /* 国际象棋demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D521BB2C20CE4ADE0041370A /* 国际象棋demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D521BB4420CE4ADF0041370A /* Build configuration list for PBXNativeTarget "国际象棋demoTests" */;
+			buildPhases = (
+				D521BB2920CE4ADE0041370A /* Sources */,
+				D521BB2A20CE4ADE0041370A /* Frameworks */,
+				D521BB2B20CE4ADE0041370A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D521BB2F20CE4ADE0041370A /* PBXTargetDependency */,
+			);
+			name = "国际象棋demoTests";
+			productName = "国际象棋demoTests";
+			productReference = D521BB2D20CE4ADE0041370A /* 国际象棋demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D521BB3720CE4ADF0041370A /* 国际象棋demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D521BB4720CE4ADF0041370A /* Build configuration list for PBXNativeTarget "国际象棋demoUITests" */;
+			buildPhases = (
+				D521BB3420CE4ADF0041370A /* Sources */,
+				D521BB3520CE4ADF0041370A /* Frameworks */,
+				D521BB3620CE4ADF0041370A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D521BB3A20CE4ADF0041370A /* PBXTargetDependency */,
+			);
+			name = "国际象棋demoUITests";
+			productName = "国际象棋demoUITests";
+			productReference = D521BB3820CE4ADF0041370A /* 国际象棋demoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D521BB0D20CE4ADC0041370A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Sj03;
+				TargetAttributes = {
+					D521BB1420CE4ADC0041370A = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					D521BB2C20CE4ADE0041370A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = D521BB1420CE4ADC0041370A;
+					};
+					D521BB3720CE4ADF0041370A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = D521BB1420CE4ADC0041370A;
+					};
+				};
+			};
+			buildConfigurationList = D521BB1020CE4ADC0041370A /* Build configuration list for PBXProject "国际象棋demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D521BB0C20CE4ADC0041370A;
+			productRefGroup = D521BB1620CE4ADC0041370A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D521BB1420CE4ADC0041370A /* 国际象棋demo */,
+				D521BB2C20CE4ADE0041370A /* 国际象棋demoTests */,
+				D521BB3720CE4ADF0041370A /* 国际象棋demoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D521BB1320CE4ADC0041370A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D521BB6B20CE6F9B0041370A /* 3.png in Resources */,
+				D521BB6720CE6F9B0041370A /* 4.png in Resources */,
+				D521BB6120CE6F9B0041370A /* 14.png in Resources */,
+				D521BB6A20CE6F9B0041370A /* 2.png in Resources */,
+				D521BB2520CE4ADE0041370A /* LaunchScreen.storyboard in Resources */,
+				D521BB6520CE6F9B0041370A /* 13.png in Resources */,
+				D521BB4F20CE4B340041370A /* boardView.xib in Resources */,
+				D521BB6220CE6F9B0041370A /* 15.png in Resources */,
+				D521BB6920CE6F9B0041370A /* 6.png in Resources */,
+				D521BB6C20CE6F9B0041370A /* 1.png in Resources */,
+				D521BB6620CE6F9B0041370A /* 11.png in Resources */,
+				D521BB6420CE6F9B0041370A /* 12.png in Resources */,
+				D521BB6320CE6F9B0041370A /* 16.png in Resources */,
+				D521BB6820CE6F9B0041370A /* 5.png in Resources */,
+				D521BB2220CE4ADE0041370A /* Assets.xcassets in Resources */,
+				D521BB2020CE4ADC0041370A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D521BB2B20CE4ADE0041370A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D521BB3620CE4ADF0041370A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D521BB1120CE4ADC0041370A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D521BB1D20CE4ADC0041370A /* ViewController.m in Sources */,
+				D563912E20CF996C0033DA58 /* Kpiece.m in Sources */,
+				D521BB4D20CE4B230041370A /* boardView.m in Sources */,
+				D521BB5320CE55580041370A /* Piece.m in Sources */,
+				D563912820CF99580033DA58 /* Bpiece.m in Sources */,
+				D563913120CFC4B90033DA58 /* placeModel.m in Sources */,
+				D563912220CF99420033DA58 /* Rpiece.m in Sources */,
+				D563911F20CF99310033DA58 /* Ppiece.m in Sources */,
+				D521BB2820CE4ADE0041370A /* main.m in Sources */,
+				D521BB1A20CE4ADC0041370A /* AppDelegate.m in Sources */,
+				D563912B20CF99640033DA58 /* Qpiece.m in Sources */,
+				D563912520CF994D0033DA58 /* Npiece.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D521BB2920CE4ADE0041370A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D521BB3220CE4ADE0041370A /* ____demoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D521BB3420CE4ADF0041370A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D521BB3D20CE4ADF0041370A /* ____demoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D521BB2F20CE4ADE0041370A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D521BB1420CE4ADC0041370A /* 国际象棋demo */;
+			targetProxy = D521BB2E20CE4ADE0041370A /* PBXContainerItemProxy */;
+		};
+		D521BB3A20CE4ADF0041370A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D521BB1420CE4ADC0041370A /* 国际象棋demo */;
+			targetProxy = D521BB3920CE4ADF0041370A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D521BB1E20CE4ADC0041370A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D521BB1F20CE4ADC0041370A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D521BB2320CE4ADE0041370A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D521BB2420CE4ADE0041370A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D521BB3F20CE4ADF0041370A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D521BB4020CE4ADF0041370A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D521BB4220CE4ADF0041370A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "国际象棋demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wanghyunchen.----demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D521BB4320CE4ADF0041370A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "国际象棋demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wanghyunchen.----demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D521BB4520CE4ADF0041370A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "国际象棋demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wanghyunchen.----demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/国际象棋demo.app/国际象棋demo";
+			};
+			name = Debug;
+		};
+		D521BB4620CE4ADF0041370A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "国际象棋demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wanghyunchen.----demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/国际象棋demo.app/国际象棋demo";
+			};
+			name = Release;
+		};
+		D521BB4820CE4ADF0041370A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "国际象棋demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wanghyunchen.----demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "国际象棋demo";
+			};
+			name = Debug;
+		};
+		D521BB4920CE4ADF0041370A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "国际象棋demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wanghyunchen.----demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "国际象棋demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D521BB1020CE4ADC0041370A /* Build configuration list for PBXProject "国际象棋demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D521BB3F20CE4ADF0041370A /* Debug */,
+				D521BB4020CE4ADF0041370A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D521BB4120CE4ADF0041370A /* Build configuration list for PBXNativeTarget "国际象棋demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D521BB4220CE4ADF0041370A /* Debug */,
+				D521BB4320CE4ADF0041370A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D521BB4420CE4ADF0041370A /* Build configuration list for PBXNativeTarget "国际象棋demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D521BB4520CE4ADF0041370A /* Debug */,
+				D521BB4620CE4ADF0041370A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D521BB4720CE4ADF0041370A /* Build configuration list for PBXNativeTarget "国际象棋demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D521BB4820CE4ADF0041370A /* Debug */,
+				D521BB4920CE4ADF0041370A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D521BB0D20CE4ADC0041370A /* Project object */;
+}
